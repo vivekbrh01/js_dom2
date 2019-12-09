@@ -1,4 +1,4 @@
-Create a webpage using the data below. Every image will have a button and on click of the button display a modal with the image and info about the image.
+Create a webpage using the data below. Every image will have a button and on click of the button display a modal with the image and info about the image. Use [data-attributes] to transfer data to model.
 
 ```js
 let data = [
