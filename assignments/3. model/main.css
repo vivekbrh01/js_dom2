@@ -2,8 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* CSS Reset */
 
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,60 +49,67 @@ table {
 }
 
 
-/* My CSS */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 10px;
-}
+/* My Resets */
 
-main {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+ *, *:before, *:after {
+	box-sizing: border-box;
+} 
+
+/* General */
+
+.container {
+    max-width: 800px;
     margin: 0 auto;
 }
-h1 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 6rem;
-    color: rgba(175, 47, 47, 0.15);
-    margin: 2rem 0;
-}
-
-.input {
-    padding: 1rem;
-    border: 1px solid silver;
-    outline: none;
-    font-size: 1.2rem;
-    font-weight: 200;
-    box-shadow: 0px 0px 3px rgba(175, 47, 47, 0.15);
-}
-
-ul {
+* {
     list-style: none;
-    padding: 2rem 0;
 }
 
-ul.list li {
+body {
+    line-height: 1.7;
+}
+
+.imageList img {
+    width: auto;
+    height: 20vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: teal;
+    text-align: center;
+    padding: 3rem;
+}
+
+.image {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    font-size: 1.3rem;
-    font-weight: 300;
-    box-shadow: 0px 2px 4px rgba(175, 47, 47, 0.15);
 }
 
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 1.3rem;
+.btn {
+   display: block;
+   width: 100%;   
+   padding: 12px 10px;
+   border-radius: 12px;
+   background-color: teal;
+   color: #fafafa;
+   font-size: 1.2rem;
+   outline: none;
 }
 
-footer > button {
-    border: 1px solid rgb(204, 139, 139);
-    margin-left: 1rem;
+.category {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.name {
+    font-size: 3.5rem;
+    padding: 20px 0;
+    text-align: center;
 }
