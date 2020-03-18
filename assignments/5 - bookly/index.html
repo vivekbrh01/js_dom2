@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+	<script defer src="app.js"></script>	
     <title>Bookly App</title>
   </head>
   <body>
@@ -10,24 +11,20 @@
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Bookly</h1>
-          <p>Best Books For Hackers</p>
-          <form id="search-books">
-            <input type="text" placeholder="Search books..." />
-          </form>
+          		<p>Best Books For Hackers</p>
+				<input class="search" type="text" placeholder="Search books..." />
 	    	</div>
 	    </header>
 	    <div id="book-list">
 	    	<h2 class="title">Books to Read</h2>
-	    	<ul>
-	    	</ul>
+	    	<ul></ul>
 	    </div>
 	    <form id="add-book">
-        <input type="checkbox" id="hide" />
-        <label for="hide">Hide all books</label>
-	    	<input type="text" placeholder="Add a book..." />
-	    	<button>Add</button>
+        	<input type="checkbox" id="hide" />
+        	<label for="hide">Hide all books</label>
+	    	<input class="add-book" type="text" placeholder="Add a book..." />
+	    	<button class="add-btn" type="submit">Add</button>
 	    </form>
-		</div>
-    <script src="app.js"></script>		
+	</div>	
   </body>
 </html>

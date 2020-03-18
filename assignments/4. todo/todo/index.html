@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="./style.css"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script defer src="./main.js"></script>
     <title>Todo</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <script src="./main.js"></script>
+    <main>
+      <h1>todos</h1>
+      <input class="input" type="text" placeholder="What needs to be done?">
+      <ul class="list"></ul>
+    </main>
+    <footer>
+      <p class="left"></p>
+      <button class="all">All</button>
+      <button class="completed">Completed</button>
+      <button class="active">Active</button>
+      <button class="clear">Clear Completed</button>
+    </footer>
   </body>
 </html>
